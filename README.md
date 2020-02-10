@@ -63,13 +63,24 @@ The way we delay this information is with a "fill in the blank" style of writing
 ###### With concatenation:
 
 ```python
-"Hello! my name is " + name + ". Welcome!"
+print("Hello! my name is " + name + ". Welcome!")
 ```
 
 ###### With string formatting:
 
 ```python
-"Hello! my name is %s. Welcome!" % name
+print("Hello! my name is %s. Welcome!" % name)
 ```
 
 While either of these two strategies can work really well, concatenation often leads to a more readable line of code, and makes it easier to catch formatting errors. String formatting, on the other hand, has a lot of utility that will become more apparent the further we get into this course. Feel free to use whichever makes more sense to you.
+
+## Your Task
+
+Make a new python file called `cards.py`. Write a program that asks users for their name, job, and phone number. Optionally also ask for other information. Then print that info in a business card format similar to the one shown in the gif at the top of this page. Be sure to include the horizontal bars at the top and the bottom of the card.
+
+When you're done, take a screenshot of your code and of a successful run of your program, and paste those screenshots into the assignment doc in google classroom.
+
+__Additional challenges:__
+- Tab in the phone number and position elements.
+- Add a 'motto' and split the motto into multiple lines if it's longer than the bars at the top and bottom of the card. You'll need to google the `len()` function to see how it works.
+- Try to make the name centered. There are various ways to do this, and none of them are easy - most involve using the `len()` function somewhere.
